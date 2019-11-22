@@ -1,0 +1,542 @@
+body {
+	font-family: 'Alfa Slab One', cursive;
+	margin: 0;
+    padding: 0;
+    background-color:#ADD8E6;
+}
+
+.global{
+    justify-content: center;
+    align-items: center;
+    margin-top:5%;
+    height:95%;
+    width:100%;
+    background-image: url(om4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pres{
+    margin-top:10%;
+}
+
+header {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color:#0099D5;
+	z-index:20;
+	height:15%;
+	border-bottom:solid blue;
+}
+
+.logoom {
+	display:flex;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:0;
+	margin-bottom:0;
+	padding:0;
+    height:100%;
+}
+
+.dropdown-menu {
+	position:absolute;
+	top:0;
+	right:0;
+	background-color:#0099D5;
+}
+
+.navigation {
+    position:fixed;
+	top:15%;
+	right:0;
+	padding-top:0px;
+	width:13%;
+	background-color:#0099D5;
+	max-height:0;
+	overflow:hidden;
+	border-left:solid blue;
+    border-bottom:solid blue;
+    letter-spacing: 1px;
+}
+
+.dropdown-menu label{
+	display:block;
+	cursor:pointer;
+	background:url(menuhmb.jpg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	background-size:60px 60px;
+	z-index:30;
+	padding:55px 25px 50px 80px;
+}
+
+#checkbx {
+	display:none;
+}
+
+input:checked ~ .navigation {
+	max-height:100%;
+	transition-duration:1.5s;
+}
+
+input:checked ~ label {
+	transform:rotateX(360deg);
+	transition-duration:1s;
+}
+
+.dropdown-menu ul li {
+	list-style:none;
+}
+
+.dropdown-menu ul li a {
+	display:block;
+	color:white;
+	text-transform:uppercase;
+	text-decoration:none;
+	line-height:60px;
+}
+
+#presentation{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#presentation h1{
+    text-align:center;
+    padding-left:25%;
+    padding-right:25%;
+    letter-spacing: 1px;
+    color:white;
+    text-shadow: black 1px 0 10px;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+#presentation p{
+    font-size:18px;
+    text-align:center;
+    padding-left:20%;
+    padding-right:20%;
+    color:white;
+    text-shadow: blue 1px 0 10px;
+}
+
+#boutonpro{
+    background-color:#ADD8E6;
+    border-radius:11px;
+    border:1px solid #4e6096;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:15px;
+    padding:12px 31px;
+    text-decoration:none;
+    text-shadow:0px 3px 5px #283966;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    margin-top: 5%;
+}
+
+/* CONNEXION */
+
+.formco{
+    display:flex;
+    flex-direction: column;
+    margin-left:30%;
+    margin-right:30%;
+    padding-left:9%;
+    padding-right:9%;
+    line-height:40px;
+    border: solid #0099D5;
+    align-items: center;
+    border-radius: 30px 0 30px 0;
+    background-color:#ADD8E6;
+    position:absolute;
+    top:23%;
+}
+
+.formco h1{
+    text-transform:uppercase;
+    text-decoration: underline;
+    color:#0099D5;
+    letter-spacing: 2px;
+}
+
+.formco label{
+    color:#0099D5;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.formco #zbeub{
+    margin:30px;
+    border-radius:20px;
+    box-shadow:-1px 34px 8px -12px #92a3d1;
+    background-color:#ADD8E6;
+    cursor:pointer;
+    font-family: 'Alfa Slab One', cursive;
+    height:50px;
+    width:180px;
+    color:#0099D5;
+}
+
+.formco a{
+    text-align:center;
+}
+
+.formco .inputco{
+    width:100%;
+    border-radius:20px;
+    height:40px;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.inputco::placeholder{
+    text-align:center;
+}
+
+#mainco{
+    width:100%;
+    height:100%;
+    top:0;
+    margin: 0;
+    padding:0;
+    background-image: url(om.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* INSCRIPTION */
+
+.formins{
+    display:flex;
+    flex-direction: column;
+    margin-left:30%;
+    margin-right:30%;
+    padding-left:9%;
+    padding-right:9%;
+    line-height:40px;
+    border: solid #0099D5;
+    align-items: center;
+    border-radius: 30px 0 30px 0;
+    background-color:#ADD8E6;
+    position:absolute;
+    top:19%;
+}
+
+.formins h1{
+    text-transform:uppercase;
+    text-decoration: underline;
+    color:#0099D5;
+    letter-spacing: 2px;
+}
+
+.formins label{
+    color:#0099D5;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.formins #zbeub{
+    margin:30px;
+    border-radius:20px;
+    box-shadow:-1px 34px 8px -12px #92a3d1;
+    background-color:#ADD8E6;
+    cursor:pointer;
+    font-family: 'Alfa Slab One', cursive;
+    height:50px;
+    width:180px;
+    color:#0099D5;
+}
+
+.formins a{
+    text-align:center;
+}
+
+.formins .inputins{
+    width:100%;
+    border-radius:20px;
+    height:40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inputins::placeholder{
+    text-align:center;
+}
+
+#mainins{
+    width:100%;
+    height:100%;
+    top:0;
+    margin: 0;
+    padding:0;
+    background-image: url(om2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* PROFIL */
+
+#profil{
+    display:flex;
+    height:75%;
+    margin: 10% 20% 0 20%;
+    padding: 0 2% 2% 2%;
+    border: 4mm ridge rgba(30,144,255, 0.6);
+    align-items: center;
+    justify-content: center;
+    background-color:#ADD8E6;
+}
+
+.formpro{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 70px;
+}
+
+.formpro h1{
+    text-transform: uppercase;
+    color:#0099D5;
+    letter-spacing: 4px;
+    border: 2mm ridge rgba(30,144,255, 0.6);
+    padding-right:10px;
+    padding-left:10px;
+    text-align: center;
+    margin-top:7%;
+}
+
+.formpro label{
+    font-size:20px;
+    text-transform: uppercase;
+    color:#0099D5;
+}
+
+.formpro .inputpro{
+    width:60%;
+    border-radius:20px;
+    height:40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formpro .inputpro::placeholder{
+    text-align:center;
+    font-size:15px;
+}
+
+.formpro #validerpro{
+    border-radius:20px;
+    box-shadow:-1px 34px 8px -12px #92a3d1;
+    background-color:#ADD8E6;
+    cursor:pointer;
+    font-family: 'Alfa Slab One', cursive;
+    height:30px;
+    width:140px;
+    color:#0099D5;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+
+
+/* LIVREOR */
+
+
+#base{
+    display:flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#gauche{
+    height:100%;
+    width:20%;
+    float:left;
+    background-color: #0099D5;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    line-height: 80px;
+    border-right:solid blue;
+    border-top: #0099D5;
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+}
+
+#ecrire{
+    border-radius:20px;
+    background-color:#ADD8E6;
+    cursor:pointer;
+    font-family: 'Alfa Slab One', cursive;
+    height:30px;
+    width:200px;
+    color:#0099D5;
+    margin-top:50px;
+}
+
+#deco{
+    border-radius:20px;
+    background-color:red;
+    cursor:pointer;
+    font-family: 'Alfa Slab One', cursive;
+    height:30px;
+    width:200px;
+    color:white;
+    margin-top:50px;
+}
+
+#co{
+    border-radius:20px;
+    background-color:#00FF00;
+    cursor:pointer;
+    font-family: 'Alfa Slab One', cursive;
+    height:30px;
+    width:200px;
+    color:black;
+    margin-top:50px;
+}
+
+#gauche p{
+    color:white;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#droite{
+    margin-left:20%;
+    margin-top:10%;
+    width:80%;
+    float:right;
+    background-color:#ADD8E6;
+    align-items: center;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+
+#post{
+    border: solid white;
+    margin:2%;
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+    border-radius:20px;
+    background-color: #0099D5;
+}
+
+#post:hover{
+    box-shadow: 12px 12px 2px 1px #4DBDE1;
+}
+
+#post h2{
+    border-bottom:solid white;
+    height:30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin:0;
+    background-color: #0099D5;
+    border-radius:20px 20px 0 0;
+    font-size:22px;
+    color:white;
+    letter-spacing: 3px;
+    font-family: 'Lora', serif;
+}
+
+#post p{
+    height:200px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border:solid white;
+    border-radius:40px;
+    margin:4%;
+    background-color:#ADD8E6;
+}
+
+/* COMMENTAIRE */
+
+.formcom{
+    display:flex;
+    flex-direction: column;
+    margin-left:30%;
+    margin-right:30%;
+    padding-left:9%;
+    padding-right:9%;
+    line-height:40px;
+    border: solid #0099D5;
+    align-items: center;
+    border-radius: 30px 0 30px 0;
+    background-color:#ADD8E6;
+    position:absolute;
+    top:23%;
+}
+
+.formcom h1{
+    text-transform:uppercase;
+    text-decoration: underline;
+    color:#0099D5;
+    letter-spacing: 2px;
+}
+
+.formcom label{
+    color:#0099D5;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.formcom #zbeub{
+    margin:30px;
+    border-radius:20px;
+    box-shadow:-1px 34px 8px -12px #92a3d1;
+    background-color:#ADD8E6;
+    cursor:pointer;
+    font-family: 'Alfa Slab One', cursive;
+    height:50px;
+    width:180px;
+    color:#0099D5;
+}
+
+.formcom a{
+    text-align:center;
+}
+
+.formcom .inputcom{
+    width:100%;
+    border-radius:20px;
+    height:100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.inputcom::placeholder{
+    text-align:center;
+}
+
+#maincom{
+    width:100%;
+    height:100%;
+    top:0;
+    margin: 0;
+    padding:0;
+    background-image: url(om3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
